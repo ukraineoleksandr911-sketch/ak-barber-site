@@ -325,3 +325,12 @@ body { padding-bottom: 76px; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
+
+/* ── Real photos (replaces placeholder) ─────────────────────────────────── */
+.photo-slot.has-img {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+.photo-slot.has-img::before { display: none; }
+.photo-slot.has-img > span  { display: none; }
